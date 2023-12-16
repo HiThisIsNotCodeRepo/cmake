@@ -1,4 +1,4 @@
-FROM arm32v7/debian:bullseye-slim
+FROM --platform=arm32v7 debian:bullseye-slim
 
 RUN apt-get update
 RUN apt-get install -y wget tar build-essential
